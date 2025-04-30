@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+body {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+/*PRINICPAL*/
+.hero {
+  display: flex;
+  color: var(--Transparent-white-paragraphs);
+  height: 500px;
+  width: 920px;
+}
+.hero .card {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.hero .card button {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  margin-top: auto;
+  padding: 12px 30px;
+  border-radius: 50px;
+  align-self: self-start;
+}
+.hero h2 {
+  font-family: "Big Shoulders";
+  color: white;
+  margin: 40px 0;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 700;
+}
+.hero .sedans {
+  background-color: var(--Bright-orange);
+}
+.hero .sedans button {
+  color: var(--Bright-orange);
+}
+.hero .suvs {
+  background-color: var(--Dark-cyan);
+}
+.hero .suvs button {
+  color: var(--Dark-cyan);
+}
+.hero .luxury {
+  background-color: var(--Very-dark-cyan);
+}
+.hero .luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+/*FOOTER*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
