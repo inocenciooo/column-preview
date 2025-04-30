@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
 
 :root {
   --Bright-orange: hsl(31, 77%, 52%);
@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 button {
   all: unset;
@@ -31,8 +32,10 @@ body {
 .hero {
   display: flex;
   color: var(--Transparent-white-paragraphs);
-  height: 500px;
+  min-height: 500px;
   width: 920px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .hero .card {
   padding: 45px;
@@ -47,7 +50,15 @@ body {
   padding: 12px 30px;
   border-radius: 50px;
   align-self: self-start;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
+.hero .card button:hover {
+  background-color: inherit;
+  color: var(--Very-light-gray-background-headings-buttons);
+  border-color: var(--Very-light-gray-background-headings-buttons);
+}
+
 .hero h2 {
   font-family: "Big Shoulders";
   color: white;
@@ -75,12 +86,13 @@ body {
   color: var(--Very-dark-cyan);
 }
 
-/*FOOTER*/
+
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Bright-orange);
 }

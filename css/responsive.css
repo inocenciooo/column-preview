@@ -1,0 +1,17 @@
+@media (max-width: 950px) {
+    body{
+        margin: 30px;
+        height: auto;
+    }
+  .hero {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .hero .card {
+    gap: 1.2rem;
+  }
+
+  .hero .card button{
+    margin-top: 15px;
+  }
+}
